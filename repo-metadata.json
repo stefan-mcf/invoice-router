@@ -1,0 +1,17 @@
+{
+  "name": "invoice-workflow-extractor",
+  "title": "Invoice Workflow Extractor",
+  "description": "Invoice extraction workflow proof with OCR/LLM mock adapters, validation checks, accounting-ready output, and n8n-style handoff docs.",
+  "private": true,
+  "topics": [
+    "invoice-processing",
+    "ocr",
+    "n8n",
+    "ai-workflows",
+    "data-extraction",
+    "accounting",
+    "automation",
+    "upwork-proof"
+  ],
+  "automation_kit_relationship": "Concrete companion proof repo; Automation Kit remains the reusable local proof framework."
+}
