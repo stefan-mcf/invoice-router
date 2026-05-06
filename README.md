@@ -8,6 +8,32 @@ Concrete proof project for document/invoice automation: extract structured field
 
 Automation Kit is the reusable local proof framework for running and validating automation patterns. This repo is a concrete client-shaped proof asset: it narrows the story to one Upwork job lane so proposals can link directly to the most relevant evidence.
 
+
+## Current promotion status
+
+Priority: Backlog.
+
+Role: Document/invoice extraction proof with validation and review boundaries.
+
+Rationale: Useful for document automation jobs, but lower immediate priority than API/debug/Sheets.
+
+
+## Automation Kit usage-case contract
+
+This repo exists to prove Automation Kit usage in one buyer-shaped workflow. It should stay thin: reusable runner logic belongs in `automation-kit`; this repo owns the case-study fixtures, workflow-specific wrapper, output evidence, and proposal-facing explanation.
+
+Ready-to-link requirements:
+
+- thin wrapper around Automation Kit rather than a duplicate framework;
+- synthetic input fixtures and deterministic output examples;
+- tests for the main flow and one failure or review path;
+- case-study documentation with first milestone shape;
+- screenshot or text evidence from one verified local run;
+- empty credential placeholders only;
+- no live SaaS, cloud, payment, or delivery side effects by default.
+
+Until those requirements are met, keep this repo private and treat it as a scoped backlog proof project, not a portfolio link.
+
 ## Client-facing promise
 
 I can turn messy business documents into structured, validated workflow data with a safe review boundary.
