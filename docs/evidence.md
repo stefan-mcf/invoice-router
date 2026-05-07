@@ -15,4 +15,4 @@ PYTHONPATH=src python3.11 -m invoice_router.cli queue list
 - review scenarios create packets under `artifacts/local/queue/pending/`;
 - duplicate scenarios reject without export previews;
 - replay confirms deterministic artifact reproduction;
-- screenshots show CLI, API, review queue, export preview, and quality-gate proof.
+- screenshots show CLI, API, review queue, export previews, and quality-gate coverage.

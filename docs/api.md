@@ -1,6 +1,6 @@
 # API
 
-Invoice Router exposes a local FastAPI surface for the fixture-safe proof bundle.
+Invoice Router exposes a local FastAPI surface for the fixture-safe repository workflow.
 
 ## Endpoints
 

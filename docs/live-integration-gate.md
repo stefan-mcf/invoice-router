@@ -1,6 +1,6 @@
 # Future Live Integration Gate
 
-This repo does not perform live proof by default.
+This repo does not enable live integrations by default.
 
 A future live stage would require:
 
@@ -17,4 +17,4 @@ Approval checklist before any live stage:
 - payload scopes documented;
 - cost ceiling defined;
 - fallback behavior documented;
-- proof wording updated to distinguish local proof from live proof.
+- repository wording updated to distinguish local fixture-safe use from live integrations.

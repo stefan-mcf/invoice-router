@@ -125,7 +125,7 @@ def render(
     footer = "fixture_safe=true  live_services_used=false  synthetic_data_only=true"
     draw.text((54, HEIGHT - 44), footer, font=BODY, fill=GREEN)
     meta = PngImagePlugin.PngInfo()
-    meta.add_text("Proof", title)
+    meta.add_text("Panel", title)
     image.save(path, pnginfo=meta, optimize=True)
     stat = ImageStat.Stat(image)
     if path.stat().st_size < 25000 or max(stat.stddev) < 10:
@@ -184,7 +184,7 @@ def main() -> None:
         },
         {
             "box": (960, 150, 1350, 640),
-            "title": "Proof",
+            "title": "Summary",
             "lines": [
                 f"status={health['status']}",
                 f"scenario_count={len(scenarios['scenarios'])}",
@@ -199,7 +199,7 @@ def main() -> None:
         OUT / "01-flow-overview.png",
         "Invoice Router Flow",
         (
-            "A deterministic invoice intake proof with validation, "
+            "A deterministic invoice intake workflow with validation, "
             "review routing, and export previews."
         ),
         flow_panels,
@@ -220,8 +220,8 @@ def main() -> None:
         },
     ]
     render(
-        OUT / "02-cli-proof.png",
-        "CLI Proof",
+        OUT / "02-cli-walkthrough.png",
+        "CLI Walkthrough",
         "Scenario discovery and deterministic operator control from a clean checkout.",
         cli_panels,
     )
@@ -242,7 +242,7 @@ def main() -> None:
     ]
     render(
         OUT / "03-api-openapi.png",
-        "API OpenAPI Proof",
+        "API OpenAPI",
         "FastAPI surface for health, scenarios, validation, runs, and queue actions.",
         api_panels,
     )
@@ -269,7 +269,7 @@ def main() -> None:
         },
     ]
     render(
-        OUT / "04-run-artifact-proof.png",
+        OUT / "04-run-artifacts.png",
         "Run Artifact Proof",
         "Each run writes structured artifacts and handoff notes under a deterministic run ID.",
         artifact_panels,
@@ -290,7 +290,7 @@ def main() -> None:
         },
     ]
     render(
-        OUT / "05-review-queue-proof.png",
+        OUT / "05-review-queue.png",
         "Review Queue Proof",
         "Review packets are file-backed and resolvable through operator surfaces.",
         queue_panels,
@@ -311,7 +311,7 @@ def main() -> None:
         },
     ]
     render(
-        OUT / "06-export-preview-proof.png",
+        OUT / "06-export-previews.png",
         "Export Preview Proof",
         "Approved runs emit accounting-ready previews without pretending to send anything live.",
         export_panels,
@@ -336,7 +336,7 @@ def main() -> None:
         },
     ]
     render(
-        OUT / "07-low-code-mapping-proof.png",
+        OUT / "07-low-code-mappings.png",
         "Low-Code Mapping Proof",
         (
             "The repo explains how the output shape fits workflow builders "

@@ -2,7 +2,7 @@
 
 Date: 2026-05-07
 Repo: invoice-router
-Purpose: standalone proof repository for fixture-safe invoice extraction, validation, review routing, and accounting-ready export previews.
+Purpose: standalone repository for fixture-safe invoice extraction, validation, review routing, and accounting-ready export previews.
 
 ## Implemented scope
 

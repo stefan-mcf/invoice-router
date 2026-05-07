@@ -8,4 +8,4 @@ Typical mapping:
 - Approved path -> forward export preview payload
 - Review path -> post the packet ID into a human review lane
 
-Placeholder credentials only. Keep live endpoints disabled in the default proof.
+Placeholder credentials only. Keep live endpoints disabled in the default local workflow.

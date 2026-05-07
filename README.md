@@ -1,10 +1,10 @@
 # Invoice Router
 
-Fixture-safe invoice extraction, validation, review routing, and accounting export preview proof for document automation work.
+Invoice Router is a fixture-safe tool for invoice extraction, validation, review routing, and accounting-ready export previews.
 
-Invoice Router proves one bounded workflow clearly: messy invoice-like documents can become structured, validated, auditable records with a deterministic review boundary before any live OCR, accounting credentials, or customer data enter the system.
+It is designed for a narrow but practical workflow: take invoice-like inputs, normalize them into structured records, validate totals and required fields, route uncertain cases into review, and emit export-ready payloads for approved runs.
 
-## What this repository proves
+## What it includes
 
 - Typed contracts for ingest, extraction, validation findings, routing decisions, review packets, and export previews.
 - Six synthetic invoice scenarios covering approval, review, and rejection paths.
@@ -13,11 +13,11 @@ Invoice Router proves one bounded workflow clearly: messy invoice-like documents
 - File-backed review packets plus replayable per-run artifacts.
 - Operator surfaces through both CLI and FastAPI.
 - Xero-style, Fortnox-style, QuickBooks-style, and CSV export previews for approved cases.
-- Public-safe proof only: synthetic fixtures, placeholder credentials, no external side effects.
+- Synthetic fixtures and placeholder credentials only by default.
 
 ## Safety boundary
 
-Synthetic fixtures only. Empty credential placeholders only. No live OCR, live LLM calls, live accounting writes, customer data, email sends, public visibility changes, releases, cloud deployment, or external submissions are part of the default proof path.
+Synthetic fixtures only. Empty credential placeholders only. No live OCR, live LLM calls, live accounting writes, customer data, email sends, releases, cloud deployment, or external submissions are part of the default local workflow.
 
 ## Quick start
 
@@ -56,21 +56,21 @@ curl -fsS -X POST http://127.0.0.1:8024/run   -H 'Content-Type: application/json
 
 [![Flow overview](docs/screenshots/01-flow-overview.png)](docs/screenshots/01-flow-overview.png)
 
-[![CLI proof](docs/screenshots/02-cli-proof.png)](docs/screenshots/02-cli-proof.png)
+[![CLI walkthrough](docs/screenshots/02-cli-walkthrough.png)](docs/screenshots/02-cli-walkthrough.png)
 
 [![API OpenAPI](docs/screenshots/03-api-openapi.png)](docs/screenshots/03-api-openapi.png)
 
-[![Run artifact proof](docs/screenshots/04-run-artifact-proof.png)](docs/screenshots/04-run-artifact-proof.png)
+[![Run artifacts](docs/screenshots/04-run-artifacts.png)](docs/screenshots/04-run-artifacts.png)
 
-[![Review queue proof](docs/screenshots/05-review-queue-proof.png)](docs/screenshots/05-review-queue-proof.png)
+[![Review queue](docs/screenshots/05-review-queue.png)](docs/screenshots/05-review-queue.png)
 
-[![Export preview proof](docs/screenshots/06-export-preview-proof.png)](docs/screenshots/06-export-preview-proof.png)
+[![Export previews](docs/screenshots/06-export-previews.png)](docs/screenshots/06-export-previews.png)
 
-[![Low-code mapping proof](docs/screenshots/07-low-code-mapping-proof.png)](docs/screenshots/07-low-code-mapping-proof.png)
+[![Low-code mappings](docs/screenshots/07-low-code-mappings.png)](docs/screenshots/07-low-code-mappings.png)
 
 [![Quality gates](docs/screenshots/08-quality-gates.png)](docs/screenshots/08-quality-gates.png)
 
-More evidence:
+Supporting docs:
 
 - `docs/architecture.md`
 - `docs/api.md`
@@ -79,7 +79,7 @@ More evidence:
 - `docs/sandbox-walkthrough.md`
 - `docs/screenshots/README.md`
 
-## How the review boundary works
+## Workflow
 
 1. Parse a synthetic invoice fixture into typed extracted fields.
 2. Record confidence and source references for every required field.
@@ -91,10 +91,10 @@ More evidence:
 ## Related repositories
 
 - `automation-kit` — reusable local automation patterns and optional shared conventions.
-- `review-router` — stronger reference for file-backed review queue discipline.
-- `sheets-airtable-sync` — reference for typed output normalization and export proof surfaces.
+- `review-router` — reference for file-backed review queue discipline.
+- `sheets-airtable-sync` — reference for typed output normalization and export surfaces.
 
-These references inform shape and conventions only. Invoice Router stands on its own and ships as a self-contained proof repo.
+These references inform shape and conventions only. Invoice Router runs as a standalone project.
 
 ## Project docs
 
@@ -102,14 +102,14 @@ These references inform shape and conventions only. Invoice Router stands on its
 |---|---|
 | `docs/architecture.md` | package boundaries, runtime flow, artifact layout, and review discipline |
 | `docs/api.md` | FastAPI endpoints and request/response examples |
-| `docs/case-study.md` | buyer-facing workflow framing and scenario outcomes |
-| `docs/evidence.md` | reproducible verification commands and proof notes |
+| `docs/case-study.md` | workflow framing and scenario outcomes |
+| `docs/evidence.md` | reproducible verification commands and run notes |
 | `docs/sandbox-walkthrough.md` | end-to-end local walkthrough |
 | `docs/public-readiness-checklist.md` | public-surface checklist |
 | `docs/automation-kit-backbone.md` | optional shared-convention and capability boundary |
 | `docs/low-code/` | n8n, Make, and Zapier mapping notes |
 | `docs/proposal-mapping.md` | capability-to-keyword fit and positioning |
-| `docs/live-integration-gate.md` | what would be needed for future live proof |
+| `docs/live-integration-gate.md` | requirements for enabling live integrations later |
 
 ## Quality gates
 

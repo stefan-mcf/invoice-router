@@ -2,13 +2,13 @@
 
 Date: 2026-05-07
 Repo: invoice-router
-Visibility target: public proof repo with fixture-safe local execution by default
+Visibility target: public repository with fixture-safe local execution by default
 
 ## Concept pitch
 
-Invoice Router is a concrete proof project for invoice and document automation. It shows how invoice-like documents can be converted into structured, validated, accounting-ready previews with a deterministic review boundary.
+Invoice Router is a focused invoice-processing tool for extraction, validation, review routing, and accounting-ready export previews.
 
-The repo is intentionally narrow. It does not try to be a general document platform, an OCR benchmark, or an accounting connector suite. It proves one dependable outcome: turn messy invoice inputs into auditable structured data with clear approval, review, and rejection behavior.
+The repo is intentionally narrow. It does not try to be a general document platform, an OCR benchmark, or an accounting connector suite. Its goal is to turn messy invoice inputs into auditable structured data with clear approval, review, and rejection behavior.
 
 ## Demand signals addressed
 
@@ -32,7 +32,7 @@ This project is shaped for work that usually mentions one or more of the followi
 - CSV review workflows
 - Xero-style, Fortnox-style, and QuickBooks-style payload previews
 
-## Concrete proof flows
+## Covered flows
 
 - Clean invoice -> approved extraction -> export previews
 - Missing tax ID -> review packet
@@ -41,17 +41,17 @@ This project is shaped for work that usually mentions one or more of the followi
 - Multi-currency inconsistency -> review packet
 - Minimal invoice -> approved with narrow required-field set
 
-## Evidence target
+## Deliverables
 
-A complete proof package includes:
+A complete local package includes:
 
 - synthetic invoice fixtures
 - deterministic run artifacts
 - structured extraction, validation, routing, and export preview JSON
 - review packets for flagged scenarios
-- client-readable handoff notes
-- screenshot panels showing proof, not decoration
-- tests and verification scripts proving repeatability
+- operator-readable handoff notes
+- screenshot panels tied to repository behavior
+- tests and verification scripts for repeatability
 
 ## Proposal use
 
@@ -63,18 +63,18 @@ First milestone to suggest:
 
 ## Relationship to other repositories
 
-- `automation-kit` remains a useful source of shared local proof conventions and optional reusable utilities.
+- `automation-kit` remains a useful source of shared local conventions and optional reusable utilities.
 - `review-router` is the closest reference for review queue behavior and replayable artifacts.
-- `sheets-airtable-sync` is a strong reference for typed mapping and output proof surfaces.
+- `sheets-airtable-sync` is a strong reference for typed mapping and output surfaces.
 
-These repos inform conventions only. Invoice Router remains its own standalone proof package.
+These repos inform conventions only. Invoice Router remains its own standalone package.
 
 ## Safety and scope boundaries
 
-- Local proof repo by default.
+- Local fixture-safe repository by default.
 - Synthetic fixtures only until explicit approval is given for real client data.
 - Empty credential placeholders only.
-- No live OCR, live LLM, live accounting, or live email calls in the default proof.
-- No automatic visibility, release, or external publication action outside explicit operator control.
-- No cloud deployment, paid resource creation, or production-readiness claim in the first proof sprint.
-- Evidence must remain deterministic: sample input, structured output, validation log, test output, and handoff notes.
+- No live OCR, live LLM, live accounting, or live email calls in the default local workflow.
+- No automatic release or external publication action outside explicit operator control.
+- No cloud deployment, paid resource creation, or production-readiness claim in the first implementation slice.
+- Evidence remains deterministic: sample input, structured output, validation log, test output, and handoff notes.

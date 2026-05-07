@@ -2,9 +2,9 @@
 
 Typical mapping:
 
-- Trigger -> attachment or form event
-- Webhooks by Zapier -> call `/run`
-- Filter -> allow only approved routes into downstream preview handling
-- Storage or task step -> retain review packet IDs for operator follow-up
+- Catch Hook trigger -> receive invoice payload metadata
+- Webhooks by Zapier action -> call `/run`
+- Paths step -> branch on `routing_outcome`
+- Storage or task action -> keep review packet IDs and operator notes
 
-The proof bundle documents a safe request and response contract without claiming live connector execution.
+The local workflow documents a safe request and response contract without claiming live connector execution.

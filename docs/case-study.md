@@ -1,6 +1,6 @@
 # Case Study
 
-Invoice Router is a proof package for one narrow workflow:
+Invoice Router covers one narrow workflow:
 
 - receive an invoice-like document;
 - extract the relevant fields;
@@ -10,7 +10,7 @@ Invoice Router is a proof package for one narrow workflow:
 
 ## Scenario families
 
-| Scenario | Outcome | What it proves |
+| Scenario | Outcome | Operational value |
 |---|---|---|
 | clean-approved-invoice | approved | direct export preview path |
 | missing-tax-id-invoice | review | tax compliance guardrail |
@@ -19,4 +19,4 @@ Invoice Router is a proof package for one narrow workflow:
 | multi-currency-inconsistency-invoice | review | conflicting-currency guardrail |
 | minimal-core-invoice | approved | narrow valid baseline |
 
-This makes the repo useful for proposals and technical reviews that need controlled invoice extraction rather than broad platform claims.
+This makes the repo useful for technical reviews and delivery planning that need controlled invoice extraction rather than broad platform claims.

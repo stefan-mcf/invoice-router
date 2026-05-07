@@ -1,5 +1,16 @@
-# Case-Fit Snippets
+# Case Fit Snippets
 
-- Best fit: invoice intake, AP document prep, bookkeeping pre-checks, accounting handoff validation, and review-gated data extraction.
-- Not the claim: live OCR production rollout, direct accounting writes, or end-to-end production integrations.
-- Strong proof angle: controlled extraction plus review routing with replayable local artifacts.
+Use this repository when the project needs:
+
+- invoice or receipt extraction with structured outputs
+- validation before downstream accounting handoff
+- a human review queue for uncertain fields or totals
+- replayable local artifacts for debugging and acceptance review
+
+Avoid using this repository to imply:
+
+- live OCR production rollout
+- direct accounting writes
+- end-to-end production integrations
+
+Strong positioning angle: controlled extraction plus review routing with replayable local artifacts.

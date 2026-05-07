@@ -1,9 +1,9 @@
 # Skills Index
 
-- invoice extraction and normalization
-- arithmetic and field validation
-- review-queue design
-- deterministic audit artifacts
-- FastAPI proof surfaces
-- low-code workflow handoff notes
-- accounting preview mapping
+Relevant delivery surfaces in this repository:
+
+- FastAPI API surface
+- CLI workflow controls
+- Review queue and replayable artifacts
+- Export preview mapping
+- Synthetic scenario coverage
