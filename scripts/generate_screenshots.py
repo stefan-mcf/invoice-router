@@ -63,10 +63,18 @@ def run_command(command: list[str], max_lines: int = 12) -> list[str]:
     return lines[:max_lines] or ["command completed with no output"]
 
 
-def wrap(lines: list[str], width: int = 56) -> list[str]:
+def wrap(lines: list[str], width: int = 44) -> list[str]:
     output: list[str] = []
     for line in lines:
-        output.extend(textwrap.wrap(line, width=width) or [""])
+        output.extend(
+            textwrap.wrap(
+                line,
+                width=width,
+                break_long_words=False,
+                break_on_hyphens=False,
+            )
+            or [""]
+        )
     return output
 
 
