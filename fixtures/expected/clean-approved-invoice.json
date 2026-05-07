@@ -1,0 +1,11 @@
+{
+  "expected_outcome": "approved",
+  "expected_reason_codes": [],
+  "expected_review_packet": false,
+  "expected_export_targets": [
+    "xero",
+    "fortnox",
+    "quickbooks",
+    "csv"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "expected_outcome": "flagged_for_review",
+  "expected_reason_codes": [
+    "currency_inconsistency"
+  ],
+  "expected_review_packet": true,
+  "expected_export_targets": []
+}

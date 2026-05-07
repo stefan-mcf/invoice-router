@@ -1,0 +1,13 @@
+{
+  "package": "invoice-router",
+  "capabilities": [
+    "invoice-ingest-schema",
+    "deterministic-extraction",
+    "validation-report",
+    "review-packet-queue",
+    "accounting-preview",
+    "local-api",
+    "cli-surface",
+    "replayable-artifacts"
+  ]
+}

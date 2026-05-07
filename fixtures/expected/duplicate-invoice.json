@@ -1,0 +1,8 @@
+{
+  "expected_outcome": "rejected",
+  "expected_reason_codes": [
+    "duplicate_exact"
+  ],
+  "expected_review_packet": false,
+  "expected_export_targets": []
+}

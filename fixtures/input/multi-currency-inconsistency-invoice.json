@@ -1,0 +1,32 @@
+{
+  "scenario_name": "multi-currency-inconsistency-invoice",
+  "source_document_name": "multi-currency-inconsistency-invoice.txt",
+  "document_text": "Vendor: Harbor Logistics\nInvoice Number: INV-1004\nInvoice Date: 2026-05-04\nDue Date: 2026-05-25\nCurrency: USD\nSubtotal: 700.00\nTax: 70.00\nTotal: 770.00\nTax ID: US-321654\nPayment Terms: Net 21\nNotes: line items mention EUR storage charge\n",
+  "vendor_name": "Harbor Logistics",
+  "invoice_number": "INV-1004",
+  "invoice_date": "2026-05-04",
+  "due_date": "2026-05-25",
+  "currency": "USD",
+  "subtotal": 700.0,
+  "tax_amount": 70.0,
+  "total": 770.0,
+  "tax_id": "US-321654",
+  "payment_terms": "Net 21",
+  "line_items": [
+    {
+      "description": "Warehouse storage",
+      "quantity": 7,
+      "unit_price": 100.0,
+      "total": 700.0,
+      "currency": "EUR"
+    }
+  ],
+  "currency_mentions": [
+    "USD",
+    "EUR"
+  ],
+  "known_duplicate": false,
+  "metadata": {
+    "buyer_fit": "currency-check"
+  }
+}

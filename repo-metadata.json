@@ -1,18 +1,21 @@
-     1|{
-     2|  "name": "invoice-router",
-     3|  "title": "Invoice Router",
-     4|  "description": "Invoice extraction workflow proof with OCR/LLM mock adapters, validation checks, accounting-ready output, and n8n-style handoff docs.",
-     5|  "private": true,
-     6|  "topics": [
-     7|    "invoice-processing",
-     8|    "ocr",
-     9|    "n8n",
-    10|    "ai-workflows",
-    11|    "data-extraction",
-    12|    "accounting",
-    13|    "automation",
-    14|    "upwork-proof"
-    15|  ],
-    16|  "automation_kit_relationship": "Concrete companion proof repo; Automation Kit remains the reusable local proof framework."
-    17|}
-    18|
+{
+  "name": "invoice-router",
+  "title": "Invoice Router",
+  "description": "Fixture-safe invoice extraction, validation, review routing, and accounting export preview proof.",
+  "private": false,
+  "topics": [
+    "invoice-processing",
+    "document-automation",
+    "review-queue",
+    "fastapi",
+    "pydantic",
+    "accounting",
+    "workflow-automation",
+    "synthetic-fixtures"
+  ],
+  "related_repositories": [
+    "automation-kit",
+    "review-router",
+    "sheets-airtable-sync"
+  ]
+}

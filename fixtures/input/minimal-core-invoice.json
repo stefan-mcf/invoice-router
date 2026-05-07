@@ -1,0 +1,31 @@
+{
+  "scenario_name": "minimal-core-invoice",
+  "source_document_name": "minimal-core-invoice.txt",
+  "document_text": "Vendor: Pine Works\nInvoice Number: INV-1005\nInvoice Date: 2026-05-05\nCurrency: GBP\nSubtotal: 200.00\nTax: 0.00\nTotal: 200.00\n",
+  "vendor_name": "Pine Works",
+  "invoice_number": "INV-1005",
+  "invoice_date": "2026-05-05",
+  "due_date": null,
+  "currency": "GBP",
+  "subtotal": 200.0,
+  "tax_amount": 0.0,
+  "total": 200.0,
+  "tax_id": "GB-778899",
+  "payment_terms": null,
+  "line_items": [
+    {
+      "description": "Prototype drafting",
+      "quantity": 2,
+      "unit_price": 100.0,
+      "total": 200.0,
+      "currency": "GBP"
+    }
+  ],
+  "currency_mentions": [
+    "GBP"
+  ],
+  "known_duplicate": false,
+  "metadata": {
+    "buyer_fit": "minimal-core"
+  }
+}

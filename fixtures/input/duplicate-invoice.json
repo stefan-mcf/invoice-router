@@ -1,0 +1,32 @@
+{
+  "scenario_name": "duplicate-invoice",
+  "source_document_name": "duplicate-invoice.txt",
+  "document_text": "Vendor: Northwind Supplies\nInvoice Number: INV-1001\nInvoice Date: 2026-05-01\nDue Date: 2026-05-15\nCurrency: USD\nSubtotal: 1000.00\nTax: 100.00\nTotal: 1100.00\nTax ID: US-123456\nPayment Terms: Net 14\n",
+  "vendor_name": "Northwind Supplies",
+  "invoice_number": "INV-1001",
+  "invoice_date": "2026-05-01",
+  "due_date": "2026-05-15",
+  "currency": "USD",
+  "subtotal": 1000.0,
+  "tax_amount": 100.0,
+  "total": 1100.0,
+  "tax_id": "US-123456",
+  "payment_terms": "Net 14",
+  "line_items": [
+    {
+      "description": "Consulting services",
+      "quantity": 10,
+      "unit_price": 100.0,
+      "total": 1000.0,
+      "currency": "USD"
+    }
+  ],
+  "currency_mentions": [
+    "USD"
+  ],
+  "known_duplicate": true,
+  "duplicate_reference": "clean-approved-invoice",
+  "metadata": {
+    "buyer_fit": "dedupe"
+  }
+}

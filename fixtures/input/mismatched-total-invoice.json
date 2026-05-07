@@ -1,0 +1,31 @@
+{
+  "scenario_name": "mismatched-total-invoice",
+  "source_document_name": "mismatched-total-invoice.txt",
+  "document_text": "Vendor: Alpine Data Co\nInvoice Number: INV-1003\nInvoice Date: 2026-05-03\nDue Date: 2026-05-24\nCurrency: USD\nSubtotal: 300.00\nTax: 30.00\nTotal: 325.00\nTax ID: US-555888\nPayment Terms: Net 21\n",
+  "vendor_name": "Alpine Data Co",
+  "invoice_number": "INV-1003",
+  "invoice_date": "2026-05-03",
+  "due_date": "2026-05-24",
+  "currency": "USD",
+  "subtotal": 300.0,
+  "tax_amount": 30.0,
+  "total": 325.0,
+  "tax_id": "US-555888",
+  "payment_terms": "Net 21",
+  "line_items": [
+    {
+      "description": "Monthly support",
+      "quantity": 3,
+      "unit_price": 100.0,
+      "total": 300.0,
+      "currency": "USD"
+    }
+  ],
+  "currency_mentions": [
+    "USD"
+  ],
+  "known_duplicate": false,
+  "metadata": {
+    "buyer_fit": "validation"
+  }
+}

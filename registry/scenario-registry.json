@@ -1,0 +1,34 @@
+{
+  "scenarios": [
+    {
+      "name": "clean-approved-invoice",
+      "description": "Clean approved invoice with consistent totals and complete fields.",
+      "expected_outcome": "approved"
+    },
+    {
+      "name": "missing-tax-id-invoice",
+      "description": "Invoice missing a tax ID and requiring review.",
+      "expected_outcome": "flagged_for_review"
+    },
+    {
+      "name": "mismatched-total-invoice",
+      "description": "Invoice with arithmetic mismatch between subtotal, tax, and total.",
+      "expected_outcome": "flagged_for_review"
+    },
+    {
+      "name": "duplicate-invoice",
+      "description": "Known duplicate invoice that should be rejected directly.",
+      "expected_outcome": "rejected"
+    },
+    {
+      "name": "multi-currency-inconsistency-invoice",
+      "description": "Invoice containing conflicting currency signals.",
+      "expected_outcome": "flagged_for_review"
+    },
+    {
+      "name": "minimal-core-invoice",
+      "description": "Minimal invoice containing only core required fields.",
+      "expected_outcome": "approved"
+    }
+  ]
+}
