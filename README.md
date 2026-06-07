@@ -150,3 +150,7 @@ registry/                  capability metadata and scenario registry
 ## License
 
 MIT License. See LICENSE.
+
+## Automation Tools Catalog
+
+Part of [Stefan's automation tools catalog](https://github.com/stefan-mcf/automation-tools).
