@@ -1,8 +1,10 @@
 # Invoice Router
 
-Invoice Router is a fixture-safe tool for invoice extraction, validation, review routing, and accounting-ready export previews.
+Invoice Router is a Python workflow for invoice extraction, validation, review routing, and accounting-ready export previews.
 
 It is designed for a narrow but practical workflow: take invoice-like inputs, normalize them into structured records, validate totals and required fields, route uncertain cases into review, and emit export-ready payloads for approved runs.
+
+[Read the case study](docs/case-study.md) · [Review the architecture](docs/architecture.md) · [Run the walkthrough](docs/sandbox-walkthrough.md)
 
 ## What it includes
 
@@ -150,7 +152,3 @@ registry/                  capability metadata and scenario registry
 ## License
 
 MIT License. See LICENSE.
-
-## Automation Tools Catalog
-
-Part of [Stefan's automation tools catalog](https://github.com/stefan-mcf/automation-tools).
