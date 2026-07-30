@@ -6,7 +6,7 @@ It is designed for a narrow but practical workflow: take invoice-like inputs, no
 
 [Read the case study](docs/case-study.md) · [Review the architecture](docs/architecture.md) · [Run the walkthrough](docs/sandbox-walkthrough.md)
 
-## What it includes
+## Capabilities
 
 - Typed contracts for ingest, extraction, validation findings, routing decisions, review packets, and export previews.
 - Six synthetic invoice scenarios covering approval, review, and rejection paths.
