@@ -9,7 +9,7 @@ PYTHONPATH=src python3.11 -m invoice_router.cli validate mismatched-total-invoic
 PYTHONPATH=src python3.11 -m invoice_router.cli queue list
 ```
 
-## What the evidence should show
+## Expected results
 
 - approved scenarios produce export previews;
 - review scenarios create packets under `artifacts/local/queue/pending/`;
