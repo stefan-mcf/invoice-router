@@ -8,6 +8,8 @@ It is designed for a narrow but practical workflow: take invoice-like inputs, no
 
 ## Capabilities
 
+**Role:** invoice contracts, extraction and validation, review routing, export previews and tests. **Status:** an SM Systems reference implementation demonstrated with synthetic invoices.
+
 - Typed contracts for ingest, extraction, validation findings, routing decisions, review packets, and export previews.
 - Six synthetic invoice scenarios covering approval, review, and rejection paths.
 - Deterministic extraction with per-field confidence, source references, and missing-reason handling.
