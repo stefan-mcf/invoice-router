@@ -1,17 +1,15 @@
 {
   "name": "invoice-router",
   "title": "Invoice Router",
-  "description": "Fixture-safe invoice extraction, validation, review routing, and accounting export previews.",
+  "description": "Deterministic invoice validation, operator review and accounting export previews using synthetic examples.",
   "private": false,
   "topics": [
-    "invoice-processing",
-    "document-automation",
-    "review-queue",
+    "python",
     "fastapi",
     "pydantic",
-    "accounting",
-    "workflow-automation",
-    "synthetic-fixtures"
+    "invoice-processing",
+    "data-validation",
+    "human-in-the-loop"
   ],
   "related_repositories": [
     "automation-kit",
