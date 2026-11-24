@@ -8,9 +8,11 @@ Validate invoice-shaped inputs, route uncertain cases to review and prepare acco
 
 [Architecture](docs/architecture.md) · [Case study](docs/case-study.md) · [Walkthrough](docs/sandbox-walkthrough.md)
 
-![Generated run-artifact example from a synthetic invoice](docs/screenshots/04-run-artifacts.png)
+## An invoice total does not add up
 
-*Local synthetic example; the [image index](docs/screenshots/README.md) retains the full sequence.*
+The [synthetic invoice](fixtures/input/mismatched-total-invoice.json) states a $325 total when the $300 subtotal and $30 tax add up to $330. Validation records `arithmetic_mismatch`, flags the invoice for review and creates a review packet. The [expected result](fixtures/expected/mismatched-total-invoice.json) lists zero export targets.
+
+After [setup](#usage), run `python -m invoice_router.cli run mismatched-total-invoice` to see the decision locally.
 
 ## How it works
 
